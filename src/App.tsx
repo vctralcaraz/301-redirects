@@ -1,5 +1,5 @@
 import './App.css'
-import Preloader from './components/Preloader/Preloader.tsx';
+import Preloader from './components/Preloader/Preloader';
 
 function App() {
 
