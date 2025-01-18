@@ -1,11 +1,17 @@
 import { useState, useEffect } from "react";
+import * as f from '../assets/scripts/functions';
 
-function Home({ start }: { start: string }) {
+interface props {
+  start: string
+}
+
+function Home(props: props) {
   const [message, setMessage] = useState("");
 
   useEffect( () => {
 
-    setMessage(start);
+    console.log(f.concatStrings(props.start, props.start));
+    setMessage(props.start);
   }, [])
   
   return (

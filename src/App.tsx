@@ -1,15 +1,12 @@
 import './App.css'
 import Preloader from './components/Preloader/Preloader';
+import Home from './containers/Home';
 
 function App() {
 
   return (
-    <div className='main'>
-      <h1>
-        301-Redirects
-        <br />
-        Coming Soon
-      </h1>
+  <div className='main'>
+    <Home start="Hello!" />
 
       <Preloader />
     </div>
